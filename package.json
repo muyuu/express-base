@@ -1,0 +1,38 @@
+{
+  "name": "express-base",
+  "version": "0.0.1",
+  "private": true,
+  "author": "muyuu",
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "body-parser": "~1.8.1",
+    "coffee-middleware": "^0.2.1",
+    "coffee-script": "^1.8.0",
+    "cookie-parser": "~1.3.3",
+    "debug": "~2.0.0",
+    "express": "~4.9.0",
+    "jade": "~1.6.0",
+    "morgan": "~1.3.0",
+    "serve-favicon": "~2.1.3",
+    "stylus": "0.42.3"
+  },
+  "devDependencies": {
+    "coffee-script": "^1.8.0",
+    "del": "^1.0.0",
+    "gulp": "^3.8.10",
+    "gulp-changed": "^1.0.0",
+    "gulp-coffee": "^2.2.0",
+    "gulp-concat": "^2.4.2",
+    "gulp-filter": "^1.0.2",
+    "gulp-kss": "0.0.2",
+    "gulp-load-plugins": "^0.7.1",
+    "gulp-plumber": "^0.6.6",
+    "gulp-sourcemaps": "^1.2.8",
+    "gulp-stylus": "^1.3.4",
+    "gulp-watch": "^3.0.0",
+    "main-bower-files": "^2.4.1",
+    "run-sequence": "^1.0.2"
+  }
+}

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <title>Ozaki clinic Styleguide</title>
+  <link rel="stylesheet" href="public/kss.css" type="text/css" />
+  <link rel="stylesheet" href="public/style.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="public/html5shiv.js"></script>
+  <![endif]-->
+</head>
+<body id="styleguide">
+  <header class="styleguide-header styleguide-reset">
+    <div class="styleguide-container">
+      <h1>Ozaki clinic Styleguide</h1>
+    </div>
+  </header>
+  <div class="styleguide-container">
+    <nav class="styleguide-menu styleguide-reset">
+       <ul class="styleguide-menu-list" data-kss-ref="1">
+        <li><a href="./">0. Overview</a></li>
+        <li><a href="section-1.html">1. column</a></li>
+      </ul>
+    </nav>
+
+    <div class="styleguide-content">
+
+      <header class="example-header styleguide-reset">
+        <h1>column</h1>
+      </header>
+      <div class="styleguide-example">
+        <header class="styleguide-example-header styleguide-reset">
+          <h3>1.1 <em>row</em></h3>
+        </header>
+        <div class="styleguide-description styleguide-markdown-body styleguide-reset">
+          <p>複数カラムを作りたい時に、それらを包むdivに付与するクラス
+
+</p>
+<p>このクラスをつけた要素（通常はdiv か ul）の子要素（li と div）は全て float: left; が適用される</p>
+
+
+          <ul class="styleguide-modifier">
+          </ul>
+        </div>
+
+        <div class="styleguide-element">
+          <div class="row">
+<div class="col6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ad rem redeamus; Cur, nisi quod turpis oratio est? Utilitatis causa amicitia est quaesita. Et quidem illud ipsum non nimium probo et tantum patior, philosophum loqui de cupiditatibus finiendis.</div>
+<div class="col6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ad rem redeamus; Cur, nisi quod turpis oratio est? Utilitatis causa amicitia est quaesita. Et quidem illud ipsum non nimium probo et tantum patior, philosophum loqui de cupiditatibus finiendis.</div>
+</div>
+        </div>
+
+
+        <div class="styleguide-html styleguide-reset">
+          <div class="styleguide-html-highlight">
+            <pre><code class="xml">&lt;div class=&quot;row&quot;&gt;
+&lt;div class=&quot;col6&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ad rem redeamus; Cur, nisi quod turpis oratio est? Utilitatis causa amicitia est quaesita. Et quidem illud ipsum non nimium probo et tantum patior, philosophum loqui de cupiditatibus finiendis.&lt;/div&gt;
+&lt;div class=&quot;col6&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ad rem redeamus; Cur, nisi quod turpis oratio est? Utilitatis causa amicitia est quaesita. Et quidem illud ipsum non nimium probo et tantum patior, philosophum loqui de cupiditatibus finiendis.&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+          </div>
+        </div>
+      </div>
+      <div class="styleguide-example">
+        <header class="styleguide-example-header styleguide-reset">
+          <h3>1.4 <em>片方が幅固定の場合の2カラム</em></h3>
+        </header>
+        <div class="styleguide-description styleguide-markdown-body styleguide-reset">
+          <p>「片方のサイズが決まっていて、もう片方は決まっていない場合の2カラム」という条件の
+2カラムを作成する際に重宝するモジュール
+
+</p>
+<p>.fluidTwoColumn の子要素で、サイズが決まっている方に .fluidTwoColumn__fixed を付与。
+
+</p>
+<p>また、右に寄せたい場合は .fluidTwoColumn__fixed--right を付与</p>
+
+
+          <ul class="styleguide-modifier">
+              <li><strong>.fluidTwoColumn__fixed--right</strong> - <p>右寄せ時に使用</p>
+</li>
+          </ul>
+        </div>
+
+        <div class="styleguide-element">
+          <div class="fluidTwoColumn">
+      <div class="fluidTwoColumn__fixed {$modifiers}">
+        <img src="http://placehold.it/180x100" alt="">
+      </div>
+      <div class="fluidTwoColumn__fluid">
+        <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+        <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+        <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+      </div>
+    </div>
+        </div>
+
+        <div class="styleguide-element styleguide-modifier">
+          <span class="styleguide-modifier-name">.fluidTwoColumn__fixed--right</span>
+          <div class="fluidTwoColumn">
+      <div class="fluidTwoColumn__fixed fluidTwoColumn__fixed--right">
+        <img src="http://placehold.it/180x100" alt="">
+      </div>
+      <div class="fluidTwoColumn__fluid">
+        <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+        <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+        <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+      </div>
+    </div>
+        </div>
+
+        <div class="styleguide-html styleguide-reset">
+          <div class="styleguide-html-highlight">
+            <pre><code class="xml">&lt;div class=&quot;fluidTwoColumn&quot;&gt;
+      &lt;div class=&quot;fluidTwoColumn__fixed {$modifiers}&quot;&gt;
+        &lt;img src=&quot;http://placehold.it/180x100&quot; alt=&quot;&quot;&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;fluidTwoColumn__fluid&quot;&gt;
+        &lt;p&gt;テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。&lt;/p&gt;
+        &lt;p&gt;テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。&lt;/p&gt;
+        &lt;p&gt;テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;</code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="styleguide-footer styleguide-reset styleguide-container">
+    <p>Created using <a href="https://github.com/hughsk/kss-node">kss-node</a>.</p>
+    <p>Designed by <a href="https://github.com/">GitHub</a> , <a href="http://warpspire.com/">Kyle Neath</a>. Adjusted by 1026</p>
+  </footer>
+  <script src="public/kss.js"></script>
+  <script src="public/highlight.pack.js"></script>
+  <script src="public/jquery-1.10.2.min.js"></script>
+  <script src="public/styleguide.js"></script>
+</body>
+</html>
+

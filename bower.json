@@ -1,0 +1,21 @@
+{
+  "name": "antibase",
+  "version": "0.0.3",
+  "repository": "https://github.com/muyuu/base",
+  "ignore": [
+    "**/.*",
+    "node_modules"
+  ],
+  "dependencies": {
+    "jquery": "~1",
+    "underscore": "~1.7.0"
+  },
+  "overrides": {
+    "jquery": {
+      "main": "dist/jquery.js"
+    },
+    "underscore": {
+      "main": "underscore.js"
+    }
+  }
+}

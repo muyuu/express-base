@@ -1,0 +1,47 @@
+/*!
+片方が幅固定の場合の2カラム
+
+「片方のサイズが決まっていて、もう片方は決まっていない場合の2カラム」という条件の
+2カラムを作成する際に重宝するモジュール
+
+.fluidTwoColumn の子要素で、サイズが決まっている方に .fluidTwoColumn__fixed を付与。
+
+また、右に寄せたい場合は .fluidTwoColumn__fixed--right を付与
+
+Markup: <div class="fluidTwoColumn">
+      <div class="fluidTwoColumn__fixed {$modifiers}">
+        <img src="http://placehold.it/180x100" alt="">
+      </div>
+      <div class="fluidTwoColumn__fluid">
+        <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+        <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+        <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+      </div>
+    </div>
+
+.fluidTwoColumn__fixed--right - 右寄せ時に使用
+
+Styleguide 1.4
+*/
+.fluidTwoColumn
+  overflow hidden
+
+  &__fluid
+    overflow hidden
+    margin-left 0
+
+    p:first-child
+      margin-top 0
+
+  &__fixed
+    float left
+    margin-right 10px
+
+    &--right
+      float right
+      margin-left 10px
+      margin-right 0
+
+
+
+

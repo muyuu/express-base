@@ -10,5 +10,25 @@
     "font-awesome": "~4.2.0",
     "jquery": "~1",
     "backbone": "~1.1.2"
+  },
+  "overrides": {
+    "font-awesome": {
+      "main": [
+        "./css/font-awesome.min.css",
+        "./fonts/*"
+      ]
+    },
+    "jquery": {
+      "main": [
+        "dist/jquery.min.js",
+        "dist/jquery.min.map"
+      ]
+    },
+    "underscore": {
+      "main": [
+        "underscore-min.js",
+        "underscore-min.map"
+      ]
+    }
   }
 }

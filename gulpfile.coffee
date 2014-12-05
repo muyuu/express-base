@@ -51,7 +51,7 @@ g.task "bower", ['clear-libs'], ->
 
   g.src(mainBowerFiles())
     .pipe(jsFilter)
-    .pipe(g.dest("#{d.lib}"))
+    .pipe(g.dest("#{d.lib}js"))
     .pipe(jsFilter.restore())
     .pipe(cssFilter)
     .pipe(g.dest("#{d.lib}css"))

@@ -9,16 +9,5 @@
   "dependencies": {
     "jquery": "~1",
     "backbone": "~1.1.2"
-  },
-  "overrides": {
-    "jquery": {
-      "main": "dist/jquery.js"
-    },
-    "underscore": {
-      "main": "underscore.js"
-    },
-    "backbone": {
-      "main": "backbone.js"
-    }
   }
 }

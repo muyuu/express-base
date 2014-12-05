@@ -1,5 +1,5 @@
 {
-  "name": "antibase",
+  "name": "express-base",
   "version": "0.0.3",
   "repository": "https://github.com/muyuu/base",
   "ignore": [
@@ -7,15 +7,8 @@
     "node_modules"
   ],
   "dependencies": {
+    "fontawesome": "~4.2.0",
     "jquery": "~1",
-    "underscore": "~1.7.0"
-  },
-  "overrides": {
-    "jquery": {
-      "main": "dist/jquery.js"
-    },
-    "underscore": {
-      "main": "underscore.js"
-    }
+    "backbone": "~1.1.2"
   }
 }

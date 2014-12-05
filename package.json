@@ -4,6 +4,7 @@
   "private": true,
   "author": "muyuu",
   "scripts": {
+    "debug": "DEBUG=express-base ./bin/www",
     "start": "node ./bin/www"
   },
   "dependencies": {

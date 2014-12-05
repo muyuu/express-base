@@ -1,5 +1,5 @@
 {
-  "name": "antibase",
+  "name": "express-base",
   "version": "0.0.3",
   "repository": "https://github.com/muyuu/base",
   "ignore": [
@@ -8,7 +8,7 @@
   ],
   "dependencies": {
     "jquery": "~1",
-    "underscore": "~1.7.0"
+    "backbone": "~1.1.2"
   },
   "overrides": {
     "jquery": {
@@ -16,6 +16,9 @@
     },
     "underscore": {
       "main": "underscore.js"
+    },
+    "backbone": {
+      "main": "backbone.js"
     }
   }
 }

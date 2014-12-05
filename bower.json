@@ -7,7 +7,7 @@
     "node_modules"
   ],
   "dependencies": {
-    "fontawesome": "~4.2.0",
+    "font-awesome": "~4.2.0",
     "jquery": "~1",
     "backbone": "~1.1.2"
   }

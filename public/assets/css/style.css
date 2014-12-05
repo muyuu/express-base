@@ -464,8 +464,8 @@ select {
 .pageFooter {
   width: 100%;
   padding: 50px 0;
-  background: #8fc31f;
-  color: #fff;
+  background: #fff;
+  color: #000;
 }
 .gotoTop {
   position: fixed;

@@ -5,10 +5,26 @@ html
     link(rel='stylesheet', href='/assets/css/style.css')
     link(rel='stylesheet', href='/assets/libs/css/font-awesome.css')
   body
-    .container
-      block content
+    .bodyInner
+      .page
+        .pageHeader
+          .container
+            h1= title
+
+
+        .pageBody
+          .container
+            block content
+
+
+        .pageFooter
+          .container
+            .copyright
+              p &copy; muyuu
+
 
     script(src='/assets/libs/js/jquery.js')
     script(src='/assets/libs/js/underscore.js')
     script(src='/assets/libs/js/backbone.js')
     script(src='/assets/js/app.js')
+                                           

@@ -40,6 +40,10 @@ app.use (req, res, next) ->
 # development error handler
 # will print stacktrace
 if app.get("env") is "development"
+
+  # jade pretty
+  app.locals.pretty = true
+
   app.use (err, req, res, next) ->
     res.status err.status or 500
     res.render "error",
